@@ -7,7 +7,7 @@ It includes everything you need to get started in a single monorepo, including:
 - [Next.js](https://nextjs.org/) for the frontend
 - [Hono](https://hono.dev/) as lightweight backend
 - [shadcn/ui](https://ui.shadcn.com/) for the UI component library
-- [Prisma](https://www.prisma.io/) as ORM
+- [Drizzle](https://orm.drizzle.team/) as ORM
 - [PostgreSQL](https://www.postgresql.org/) as database
 - [Docker](https://www.docker.com/) for containerization, with docker-compose watch for hot reloading
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
@@ -59,7 +59,7 @@ This will start the api, the web app, and the database. It also enables hot relo
 
 ### Database
 
-The database is a Postgres database managed by Prisma. It is reachable through this connection: `postgres://postgres:postgres@localhost:5432/hackathon`.
+The database is a Postgres database managed by Drizzle. It is reachable through this connection: `postgres://postgres:postgres@localhost:5432/hackathon`.
 
 ## What's inside?
 
@@ -69,7 +69,7 @@ This Turborepo includes the following packages/apps:
 
 - `web`: a [Next.js](https://nextjs.org/) app
 - `api`: a [Hono](https://hono.dev/) app
-- `database`: a stub Prisma library shared by both `web` and `api` apps
+- `database`: a stub Drizzle library shared by both `web` and `api` apps
 - `ui`: a stub React component library powered by **shadcn/ui**
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
